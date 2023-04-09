@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADMIN</title>
+        <link rel="stylesheet" href="stylesAdmin.css">
+    </head>
+    <body>
+        <div id="banner_header"><a style="top:4px; position: relative;">uwu</a></div>
+        <div id="banner_lateral_left">
+            <a style="position: relative; left: 37%; top: 2%;">menu</a>
+            <ul id="lateral_menu">
+                <li>Bilancio</li>
+                <li>Transazioni</li>
+                <li>Magazzino</li>
+            </ul>
+        </div>
+        <div id="container_page"><a>corpo</a></div>
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("banner_lateral_left");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky - 7) {
+                navbar.style.position = "fixed";
+                navbar.style.top = "2%";
+              } else {
+                navbar.style.position = "absolute";
+                navbar.style.top = "12%";
+              }
+            }
+            </script>
+    </body>
+</html>
